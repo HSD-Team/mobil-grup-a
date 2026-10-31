@@ -3,3 +3,14 @@
 
 /// Örnek (mentor): verilen isme selam verir. ör. greet('Ata') → 'Merhaba, Ata!'
 String greet(String name) => 'Merhaba, $name!';
+
+int countVowels(String text){
+  var count=0;
+  for (final letter in text.toLowerCase().split('')){
+    if ('aeoöuüiı'.contains(letter))
+      {
+        count++;
+      }
+  }
+  return count;
+}
