@@ -3,3 +3,9 @@
 
 /// Örnek (mentor): verilen isme selam verir. ör. greet('Ata') → 'Merhaba, Ata!'
 String greet(String name) => 'Merhaba, $name!';
+
+
+bool isPalindrome(String word) {
+  final clean = word.toLowerCase();
+  return clean == clean.split('').reversed.join('');
+}
