@@ -19,6 +19,19 @@ bool isPalindrome(String word) {
   return clean == clean.split('').reversed.join('');
 }
 
+
+bool isLeapYear(int year){
+  if(year % 4==0){
+    if(year % 10 ==0){
+      return year % 400 == 0;
+    }
+
+    return true;
+  }
+  return false;
+
+}
+
 bool isPrime(int number){
   if(number <=1)return false;
   for (int i=2; i<= number/2; i++){
@@ -32,3 +45,4 @@ bool isPrime(int number){
 return true;
 
 }
+
